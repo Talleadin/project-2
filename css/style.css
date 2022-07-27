@@ -4,21 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    /* display: inline-block; */
     background: hsl(257, 40%, 49%) url(/4_5969525287514279609/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg) no-repeat;
     width: 100%;
-    max-height: 100vh;
-
 }
 .hu{
+    margin-top: 2em;
     margin-left: 4em;
 }
+.hu img{
+    height: 2.5em;
+}
 .container{
-    margin-top: 3em;
+    margin-top: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     margin-left: 4em;
 }
 .mock2{
@@ -38,8 +38,9 @@ body{
 }
 .reg{
 margin-top: 2em;
-
-
+}
+.reg a:hover{
+    background-color: hsl(300, 69%, 71%);
 }
 .reg a{
     display: inline-block;
@@ -65,4 +66,41 @@ footer{
     border: 1px solid;
     border-radius: 50%;
     padding: 7px;
+}
+.social:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background: hsl(257, 40%, 49%) url(/4_5969525287514279609/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg) no-repeat;
+    width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .mock{
+        margin-right: 30px;
+    }
+    .img{
+        width: 100%;
+        /* margin-right: ; */
+    }
+    .mock2{
+        margin-top: 20px;
+    }
+    footer{
+        margin: 0;
+        margin-top: 4.5em;
+        margin-left: 8.5em;
+    }
+    .mock2{
+        text-align: center;
+    }
+    
 }
